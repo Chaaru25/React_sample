@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  background-color: #94eba7;
+  height: 600px;
+  width: 600px;
+  margin: auto;
+  padding: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+h1 {
+  background-color: rgb(166, 240, 184);
+  font-family: "Courier New", Courier, monospace;
+}
