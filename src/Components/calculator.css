@@ -21,8 +21,9 @@ button {
 .layout {
   margin: auto;
   padding: auto;
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 450px;
+  align-content:center;
   border: 10px solid rgba(2, 92, 22, 0.849);
   background-color: rgb(158, 248, 197);
   border-radius: 45px;
@@ -45,7 +46,7 @@ input {
 }
 
 #result {
-  grid-column: 3/5;
+  grid-column: 1/5;
   grid-row: 5;
 }
 #clear {
