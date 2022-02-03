@@ -29,6 +29,7 @@ const Calculator = () => {
             catch(err){
                 setResult("Error");
             }
+        const num =['+',1,2,3,'/',4,5,6,'-',7,8,9,'*','.',0,'(',')'];
            
      }
         return(
@@ -47,7 +48,13 @@ const Calculator = () => {
                     
                     <button onClick ={backspace} id="backspace" >C</button>
                     
-                    <button name="+" onClick={handleClick} >+</button>
+                        { num.map((val,index) =>{
+                            return <button name ={val} onClick={handleClick}>{val}</button>
+                          })
+                        }
+                   <button className="highlight" onClick={calculate} id="result" >Enter</button>
+ 
+                   /* <button name="+" onClick={handleClick} >+</button>
                     <button name="7" onClick={handleClick} >7</button>
                     <button name="8" onClick={handleClick} >8</button>
                     <button name="9" onClick={handleClick} >9</button>
@@ -61,10 +68,9 @@ const Calculator = () => {
                     <button name="3" onClick={handleClick} >3</button>
                     <button name="/" onClick={handleClick} >/</button>
                     <button name="." onClick={handleClick} >.</button>
-                    <button name="0" onClick={handleClick} >0</button>
+                    <button name="0" onClick={handleClick} >0</button>*/
                     
-                    <button className="highlight" onClick={calculate} id="result" >Enter</button>
-                   
+                                      
                    
           
                 </div>
